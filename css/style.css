@@ -3556,11 +3556,13 @@ ul.category-list-dark a:hover {
 	padding:15px;
 }
 .form-response.success {
-	color: #468847;
-	border: 1px solid #468847;
+	color: #408000;
+        border: 1px solid #468847;
+        
 }
 .form-response.error {
-	color: #b94a48;
+	//color: #b94a48;
+        color:#DF0101;
 	border: 1px solid #b94a48;
 }
 /*Form Loader*/

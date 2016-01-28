@@ -1505,8 +1505,11 @@
 							
 								<!-- Form - Line + Medium -->
 							
-								<form id="contactForm" class="row form-theme form-md form-line pad-top-100">
-									<div class="col-sm-6">
+								<form id="contactForm" action="model/contacto_mail.php" method="post" class="row form-theme form-md form-line pad-top-100">
+									<br/>
+                                                                        <div id="formResponse" class="form-response"></div>
+                                                                        <br/>
+                                                                        <div class="col-sm-6">
 										<div class="form-group wow animated slideInLeft" data-wow-delay="200ms">
 											<label class="control-label text-secondary text-uppercase letter-spacing-3"><small>Nombre</small></label>
 											<input type="text" class="form-control text-center" name="firstName"/>
