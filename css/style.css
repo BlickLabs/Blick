@@ -8358,9 +8358,9 @@ blockquote {
 	z-index: 1;
 }
 .section-colored {
-	padding-top: 200px;
-	padding-bottom: 200px;
-	margin: 200px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 100px 0;
 	background-color: #000;
 }
 .section-pattern {
@@ -8632,13 +8632,13 @@ figure.section-effect p {
 	padding: 0;
 }
 .with-overlay .section-overlay {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .with-overlay .section-overlay-light {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
