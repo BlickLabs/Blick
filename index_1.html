@@ -86,7 +86,7 @@
 								<!-- Logo -->
 
 								<a class="logo" href="index.html">
-                                                                    <img alt="image" src="images/logo_azul.png" style="width: 150px" />
+                                                                    <img alt="image" src="images/logo_azul.png" style="width:150px; height: 30px;" />
 								</a>
 
 							</div>
@@ -197,28 +197,28 @@
 				<div class="container" >
 					<div class="row ">
 						<div class="col-md-12 wow animated zoomIn" data-wow-delay="200ms">
-							<h2 class="fancy-heading text-uppercase  text-center no-margin-bottom">Nuestros Servicios</h2>
-						</div>
-                                                <ul class="nav tab-theme tab-icons tab-light">
-                                                            <li >
-									<a >
-                                                                            <div class="center-block"><img src="images/icones/Diagnostico.png" ></div>
+							<h2 class="small-line fancy-heading text-uppercase letter-spacing-5 text-center weight-400 no-margin-bottom center-block">Nuestros Servicios</h2>
+							<ul class="nav tab-theme tab-icons tab-light ">
+                                                            <li class="active">
+									<a href="#tab1" data-toggle="tab">
+                                                                            <div class="center-block"><img src="images/icones/Diagnostico.png" style="width: 100px;height: 100px;"></div>
                                                                             <h3 class="icon-text" style="color: #000"> Diagnóstico y evaluación</h3>
 									</a>
                                                             </li>
-                                                            <li >
-									<a >
-                                                                            <div class="center-block"><img src="images/icones/Diseno.png" ></div>
+                                                            <li class="active">
+									<a href="#tab1" data-toggle="tab">
+                                                                            <div class="center-block"><img src="images/icones/Diseno.png" style="width: 100px;height: 100px;"></div>
 										<h3 class="icon-text" style="color: #000"> Diseño e ideación</h3>
 									</a>
 							    </li>
-                                                            <li >
-									<a >
-                                                                            <div class="center-block"><img src="images/icones/web.png" ></div>
+                                                            <li class="active">
+									<a href="#tab1" data-toggle="tab">
+                                                                            <div class="center-block"><img src="images/icones/web.png" style="width: 100px;height: 100px;"></div>
 										<h3 class="icon-text" style="color: #000"> Programación Web</h3>
 									</a>
                                                             </li>
-                                                </ul>
+                                                        </ul>
+						</div>
 					</div>
 				</div>
 			</section><!-- End of Section Colored -->
@@ -1272,9 +1272,9 @@
 				</div>	
 			</div>	-->	
 			
-			<!-- newsletter -->
+			<!-- Section Pattern -->
 			
-			<!--<section class="section-pattern no-margin-bottom no-margin-top clearfix" style="background-image:url('images/patterns/blackmamba.png');">
+			<section class="section-pattern no-margin-bottom no-margin-top clearfix" style="background-image:url('images/patterns/blackmamba.png');">
                             <form id="form_newsletter" name="form">
 				<div class="container">
 					<div class="row vertical-center-box">
@@ -1284,7 +1284,7 @@
 							</div>
 							<div class="col-md-8 wow animated zoomIn">
 							
-								
+								<!-- Form - Line + Light + Medium -->
                                                                 <div id="form_newsletter_result"></div>
 								<div class="form-theme form-line form-line-light form-md pad-top-50-mobile pad-top-50-tablet">
 									<div class="row">
@@ -1298,14 +1298,14 @@
                                                                                         <input type="submit"  class="btn btn-light form-submit btn-full-width letter-spacing-3" name="submit" id="submit" value="Registrate">
 										</div>
 									</div>
-								</div>
+								</div><!-- End of Form - Line + Light + Medium -->
 								
 							</div>
-						</div>
+						</div><!-- End of Vertically Centered Content Box - Desktop -->
 					
 				</div>
                             </form>
-			</section>-->
+			</section><!-- End of Section Pattern -->
 			
 			<!-- Section Image -->
 			
@@ -1375,14 +1375,55 @@
 						
 					</div> 
 					<div class="col-md-3">
+						<h4 class="footer-title letter-spacing-3 text-lighter">Categories</h4>
 						
+						<!-- Category List - Dark -->
+						
+						<ul class="category-list category-list-dark list-unstyled">
+							<li><a class="letter-spacing-2" href="#">Design (2)</a></li>
+							<li><a class="letter-spacing-2" href="#">Illustration (6)</a></li>
+							<li><a class="letter-spacing-2" href="#">Tutorials (7)</a></li>
+							<li><a class="letter-spacing-2" href="#">News (16)</a></li>
+						</ul><!-- End of Category List - Dark -->
 						
 					</div> 
 					<div class="col-md-3">
+						<h4 class="footer-title letter-spacing-3 text-lighter">Recent Posts</h4>
+						
+						<!-- Popular Posts -->
+						
+						<ul class="popular-posts">
+							<li>
+								<a href="#"><img alt="image" class="img-responsive img-circle" src="images/portfolio/square/card-5.jpg" ></a>
+								<h6><a class="letter-spacing-2" href="#">Nulla Iaculis Mattis Lorem</a></h6>
+								<p>09 Jan 2015</p>
+							</li>
+							<li>
+								<a href="#"><img alt="image" class="img-responsive img-circle" src="images/portfolio/square/bag-1.jpg" ></a>
+								<h6><a class="letter-spacing-2" href="#">Consectetur Adipiscing Elit.</a></h6>
+							  <p>11 Jan 2015</p>
+							</li>
+							<li>
+								<a href="#"><img alt="image" class="img-responsive img-circle" src="images/portfolio/square/shirt-3.jpg" ></a>
+								<h6><a class="letter-spacing-2" href="#">Blog Single</a></h6>
+								<p>12 Jan 2015</p>
+							</li>
+						</ul><!-- End of Popular Posts -->
 						
 					</div>
 					<div class="col-md-3">
+						<h4 class="footer-title letter-spacing-3 text-lighter">Gallery</h4>
 						
+						<!-- Latest Projects -->
+						
+						<ul class="list-unstyled latest-projects clearfix">
+							<li><a href="images/ntc/notes.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/notes.jpg"/></a></li>
+							<li><a href="images/ntc/stool-parts.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/stool-parts.jpg"/></a></li>
+							<li><a href="images/ntc/bottles.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/bottles.jpg"/></a></li>
+							<li><a href="images/ntc/multiple-notes.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/multiple-notes.jpg"/></a></li>
+							<li><a href="images/ntc/cards.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/cards.jpg"/></a></li>
+							<li><a href="images/ntc/white-stool.jpg" data-lightbox-gallery="widget-gallery"><img alt="image" class="img-responsive" src="images/ntc/white-stool.jpg"/></a></li>								
+						</ul><!-- End of Latest Projects -->
 						
 					</div>
 				</div>
