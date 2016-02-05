@@ -6156,7 +6156,7 @@ button.modal-close i {
 }
 .tile.tile-top .tile-content .tile-title {
 	font-weight:500;
-	word-spacing:10000px;
+	//word-spacing:10000px;
 }
 .tile.tile-top .tile-content p {
 	border-left: 3px solid #000;
@@ -9532,7 +9532,7 @@ p.error.white{
 	background: #000;
 	clear: both;
 	font-size: 13px;
-	margin-top: 200px;
+	
 	color: #fff;
 }
 .footer > .container,
