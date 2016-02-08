@@ -150,21 +150,15 @@
 										<!-- Owl Carousel Item 1 -->
 										
 										<div class="item">
-											<h2 class="text-uppercase letter-spacing-2 no-margin pad-bot-30 weight-500 word-spacing-1 true-size-mobile call-to-action" style="font-size:40px;">Innovamos el diseño y la programación web</h2>
+											<h2 class="text-uppercase letter-spacing-2 no-margin pad-bot-30 weight-500 word-spacing-1 true-size-mobile call-to-action" style="font-size:40px;">Diseño y programación web pensado en tí</h2>
 										</div>
 										
 										<!-- Owl Carousel Item 2 -->
 										
 										<div class="item">
-											<h2 class="text-uppercase letter-spacing-5 no-margin pad-bot-30 weight-500 word-spacing-5 true-size-mobile call-to-action" style="font-size:40px;">Construimos nuevas ideas</h2>
-										</div>
-										
-										<!-- Owl Carousel Item 3 -->
-										
-										<div class="item">
 											<h2 class="text-uppercase letter-spacing-5 no-margin pad-bot-30 weight-500 word-spacing-5 true-size-mobile call-to-action" style="font-size:40px;">Hacemos realidad tus ideas</h2>
 										</div>
-                                                                                
+										
 									</div><!-- Owl Carousel as Content Slider -->
 								</div>							
 							</div>
@@ -183,8 +177,8 @@
                                                     <img alt="image" class="img-responsive center-block" src="images/front-image.jpg" style="width: 550px;" >
 							<div class="tile-content">
 								<h1 class="tile-title">Conoce a Blick</h1>
-								<p style="font-size:18px;" class="no-margin-bottom word-spacing-3 text-vertical-large"><i>Sociis natoque penatibus et magnis dis parturient montes, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-								In enim justo, rhoncus ut, imperdiet a, venenatis vitae, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</i></p>
+								<p style="font-size:18px;" class="no-margin-bottom word-spacing-3 text-vertical-large"><i>Blick es el puente entre el cliente y todo un equipo de diseño y de programación. 
+                                                                        Blick te ayuda a comunicar tus ideas con diseño y a traducirlas en un sitio web facil de navegar.</i></p>
 							</div>
 						</div><!-- End of Service Box -->
 					</div>
@@ -195,21 +189,24 @@
                                                                             <div class="center-block"><img src="images/icones/Diagnostico.png" ></div>
                                                                             <h3 class="icon-text" style="color: #000"> Diagnóstico y evaluación</h3>
 									</a>
+                                                                        
                                                             </li>
                                                             <li >
 									<a >
-                                                                            <div class="center-block"><img src="images/icones/Diseno.png" ></div>
+                                                                            <div class="center-block" data-toggle="collapse" data-target="#diseno"><img src="images/icones/Diseno.png" ></div>
 										<h3 class="icon-text" style="color: #000"> Diseño e ideación</h3>
 									</a>
 							    </li>
                                                             <li >
 									<a >
-                                                                            <div class="center-block"><img src="images/icones/web.png" ></div>
+                                                                            <div class="center-block" data-toggle="collapse" data-target="#programacion"><img src="images/icones/web.png" ></div>
 										<h3 class="icon-text" style="color: #000"> Programación Web</h3>
 									</a>
                                                             </li>
                                         </ul>
+                          
                                         </div>
+                                        
 				</div>
 			</div>
 			
@@ -1080,49 +1077,60 @@
 			
 			<section class="section-img with-overlay no-margin clearfix" style="background-image:url('images/misty-waters-scene.jpg');" id="contact">
 				
-				<!-- Section Overlay -Light -->
-			
-				<div class="section-overlay-light" style="background-color: rgba(255, 255, 255, 0.5);">
-					<div class="container" >
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center wow animated zoomIn" data-wow-delay="200ms">
-								<h2 class="small-line fancy-heading text-uppercase letter-spacing-5 text-center weight-400">Contacto</h2>	
-								<h4 class="no-margin text-darker text-vertical-large letter-spacing-1 word-spacing-3 text-center"><i>¡En Blick nos preocupamos por ti! </i></h4>
-                                                                <h4 class="no-margin text-darker text-vertical-large letter-spacing-1 word-spacing-3 text-center"><i>Escríbenos y nos pondremos en contacto de inmediato </i></h4>
-							</div>
-							<div class="col-md-8 col-md-offset-2 text-center">
-							
-								<!-- Form - Line + Medium -->
-							
-								<form id="contactForm" action="model/contacto_mail.php" method="post" class="row form-theme form-md form-line pad-top-100">
-									<br/>
-                                                                        <div id="formResponse" class="form-response"></div>
-                                                                        <br/>
-                                                                        <div class="col-sm-6">
-										<div class="form-group wow animated slideInLeft" data-wow-delay="200ms">
-											<label class="control-label text-secondary text-uppercase letter-spacing-3"><small>Nombre</small></label>
-											<input type="text" class="form-control text-center" name="firstName"/>
+				<div class="container pad-top-100 pad-bot-100">
+					<div class="pad-top-100 pad-bot-100">
+						<div class="row vertical-center-box">
+							<div class="col-md-4">
+								<h3 class="text-uppercase letter-spacing-1 no-margin pad-bot-25"><strong>Contacto.</strong></h3>
+								<h6 class="letter-spacing-1 no-margin pad-bot-25 text-vertical-large pad-right-20-desktop">¡En Blick nos preocupamos por ti!
+                                                                    <br>
+                                                                Escríbenos y nos pondremos en contacto de inmediato</h6>
+
+                                
+								
+                                                        </div>
+							<div class="col-md-8 mar-top-50-tablet mar-top-50-mobile">
+								<div class="row">
+                                                                        
+									<form id="contactForm" action="model/contacto_mail.php" method="post" class="col-md-12 form-theme form-md">
+                                                                                <br/>
+                                                                                <div id="formResponse" class="form-response"></div>
+                                                                                <br/>
+										<div class="row">
+											<div class="col-sm-5">
+												<div class="row">
+													<div class="col-sm-12 mar-bot-10">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Nombre Completo" name="firstName"/>
+														</div>
+													</div>
+													<div class="col-sm-12 mar-bot-10">
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Email" name="email"/>
+														</div>
+													</div>
+													<div class="col-sm-12 visible-lg visible-md visible-sm">
+														<button type="submit" class="btn btn-theme btn-full-width form-submit weight-400">Enviar</button>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-7">
+												<div class="row">
+													<div class="col-sm-12">
+														<div class="form-group no-margin feedback-text-area">
+															<textarea class="form-control form-text-area no-margin mar-bot-25-mobile" placeholder="Mensaje" name="msg" style="height: 170px;"></textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+											
 										</div>
-									</div>
-									<div class="col-sm-6 wow animated slideInRight" data-wow-delay="200ms">
-										<div class="form-group">
-											<label class="control-label text-secondary text-uppercase letter-spacing-3"><small>Email</small></label>
-											<input type="text" class="form-control text-center" name="email"/>
-										</div>
-									</div>
-									<div class="col-sm-12 wow animated fadeInDown pad-top-35" data-wow-delay="400ms">
-										<div class="form-group feedback-text-area">
-											<label class="control-label text-secondary text-uppercase letter-spacing-3"><small>Mensaje</small></label>
-											<textarea class="form-control form-text-area text-center" name="msg"></textarea>
-										</div>
-										<button class="btn btn-theme form-submit letter-spacing-3 mar-top-30" type="submit">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
-									</div>
-								</form><!-- End of Form - Line + Medium -->
-							
+									</form>                 		
+								</div>
 							</div>
 						</div>
 					</div>
-				</div><!-- End of Section Overlay -Light -->
+				</div>
 				
 			</section><!-- End of Section Image -->
 
@@ -1133,21 +1141,14 @@
 						<div class="col-md-8">
 							<ul class="list-unstyled list-inline footer-inline-links">
 								<li class="text-secondary letter-spacing-1">©2015 MINTH - T. +01 2345 6788 - F. +01 2345 6789</li>
-								<li><a href="#" data-toggle="modal" data-target="#modalDark2">Subscribe To Our Newsletter</a></li>
+								
 							</ul>
 						</div>
 						<div class="col-md-4 copyright-right">
 							<ul class="list-unstyled list-inline footer-inline-links">
-								<li>
-									<ul class="social-icons si-light si-no-border inverse sm list-inline list-unstyled">
-										<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
-										<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
-								</li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="contact-1.html">Contact</a></li>
+								
+								<!--<li><a href="#">Privacy Policy</a></li>
+								<li><a href="contact-1.html">Contact</a></li>-->
 							</ul>
 						</div>
 					</div>
