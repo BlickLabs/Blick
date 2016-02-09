@@ -6789,7 +6789,7 @@ ul.tab-theme > li:last-child > a {
 
 ul.tab-icons {
 	text-align: center;
-	padding-top:50px;
+	padding-top:0px;
 }
 .tab-icons > li > a {
 	background-color: transparent;
@@ -13410,7 +13410,34 @@ ul.shop-menu > li:last-child{
 	color: #FFF !important;
 	margin-bottom: 0px;
 }
+<<<<<<< Updated upstream
 
 .changecolor:hover{
     background-color: black;
+=======
+.stuff-icons{
+	color: #34454d;
+	font-size: 8em;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+.stuff-icons:hover{
+	color: #3a73b9;
+}
+.stuff-icons:active{
+	color: #3a73b9;
+}
+.icontext{
+	color: #34454d;
+}
+.icontext:hover{
+	color: #212121;
+}
+.section-icons{
+	background: #EEE;
+	margin-top: 2em;
+}
+.middle-icon{
+	background: #FAFAFA;
+>>>>>>> Stashed changes
 }
