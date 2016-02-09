@@ -13410,11 +13410,6 @@ ul.shop-menu > li:last-child{
 	color: #FFF !important;
 	margin-bottom: 0px;
 }
-<<<<<<< Updated upstream
-
-.changecolor:hover{
-    background-color: black;
-=======
 .stuff-icons{
 	color: #34454d;
 	font-size: 8em;
@@ -13425,7 +13420,7 @@ ul.shop-menu > li:last-child{
 	color: #3a73b9;
 }
 .stuff-icons:active{
-	color: #3a73b9;
+	color: #34454d;
 }
 .icontext{
 	color: #34454d;
@@ -13439,5 +13434,4 @@ ul.shop-menu > li:last-child{
 }
 .middle-icon{
 	background: #FAFAFA;
->>>>>>> Stashed changes
 }
