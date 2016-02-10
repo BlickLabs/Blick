@@ -18,7 +18,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    text-align: center;
+    text-align: center !important;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -27,6 +27,8 @@
 
 .icon-iconos-17:before {
     content: "\e900";
+    text-align: center;
+    width:100px;
 }
 .icon-iconos-16:before {
     content: "\e901";
