@@ -3366,7 +3366,7 @@ ul.category-list-dark a:hover {
 	color:#fff;
 }
 .theme-form .form-control{
-	border-radius: 0px;
+	border-radius: 25px;
 }
 
 /*Sidebar Links*/
@@ -5731,7 +5731,7 @@ button.modal-close i {
 	z-index:0;
 }
 .form-control {
-	border-radius: 0;
+	
 	font-size:13px;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing: 1px;
@@ -5751,6 +5751,7 @@ button.modal-close i {
 }
 .form-theme .form-text-area {
 	height: 83px;
+        border-radius: 5px;
 }
 .form-theme .form-submit {
 	height: 34px;
@@ -9529,10 +9530,9 @@ p.error.white{
 ============================================================================= */
 
 .footer {
-	background: #000;
+	background: #3a73b9;
 	clear: both;
 	font-size: 13px;
-	
 	color: #fff;
 }
 .footer > .container,
@@ -9580,7 +9580,7 @@ p.error.white{
 /*Copyright*/
 
 .footer .footer-copyright {
-	background: #000;
+	background: #3a73b9;
 	border-top: 1px solid #222;
 	padding: 20px 0;
 }

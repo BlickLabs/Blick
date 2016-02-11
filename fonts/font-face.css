@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/12/2015, 09:58:15 PM
+    Author     : tono
+*/
+
+  @font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamRnd-Book.otf");
+  }
+  
+    .Gotham {
+  font-family: Gotham;
+  }
+  
+    @font-face {
+  font-family: "Bariol";
+  src: url("../fonts/Bariol_Regular.otf");
+  }
+    
+    .Bariol {
+  font-family: Bariol;
+  }
+  
+    @font-face {
+  font-family: "TodaySHOP";
+  src: url("../fonts/TodaySHOP-MediumItalic.otf");
+  }
+  
+    .TodaySHOP{
+  font-family: TodaySHOP;
+  }
+ 
