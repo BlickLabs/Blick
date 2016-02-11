@@ -13491,11 +13491,26 @@ ul.shop-menu > li:last-child{
 	font-family: 'GothamRnd-Book';
 }
 .service-details{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	text-align: center;
 }
 .services-tittle{
 	padding: 20px;
 	text-align: center;
 	color: #212121;
+}
+.service-information{
+	padding-top: 10%;
+	padding-bottom: 10%;
+
+}
+.three-icons{
+	color: #34454d;
+	font-size: 8em;
+	text-align: center !important;
+	transition: all 0.5s ease;
+}
+.three-icons:hover,
+.three-icons:active,
+.three-icons.active{
+	color: #3a73b9;
 }
