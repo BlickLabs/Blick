@@ -13421,7 +13421,7 @@ ul.shop-menu > li:last-child{
 }
 .stuff-icons:active,	
 .stuff-icons.active{
-	color: #3a73b9;
+	color: #00acd2;
 }
 .icontext{
 	color: #34454d;
@@ -13469,10 +13469,19 @@ ul.shop-menu > li:last-child{
 }
 .icon-services{
 	background: #EEE;
+	transition: all 0.5s ease;
+}
+.icon-services:active{
+	background: #bfe1ec;
 }
 .icon-services-middle{
 	text-align: center;
+	transition: all 0.5s ease;
 }
+.icon-services-middle:active{
+	background: #bfe1ec;
+}
+
 @font-face {
     font-family: GothamRnd-Book;
     src: url( /fonts/GothamRnd-Book.otf);
@@ -13480,4 +13489,13 @@ ul.shop-menu > li:last-child{
 .text-services{
 	text-align: center;
 	font-family: 'GothamRnd-Book';
+}
+.service-details{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.services-tittle{
+	padding: 20px;
+	text-align: center;
+	color: #212121;
 }
