@@ -2870,7 +2870,7 @@ Header Alignment
 	width:100%;
 	height: 100%;
 	content:'';
-	background: rgba(255,255,255,0.65) !important;
+	background: rgba(200,200,200,0.65) !important;
 	z-index:1;
 }
 .theme-background-section.fs-overlay.light:before {
@@ -6048,7 +6048,7 @@ button.modal-close i {
 .tile {
 	background-color: transparent;
   	position: relative;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 .tile.hover-box {
 	padding: 50px;
@@ -9911,8 +9911,8 @@ button {
 .tp-caption .btn-theme,
 .tp-caption .btn-theme:focus {
 	color: #fff !important;
-	background-color: #000 !important;
-	border: #000 !important;
+	background-color: #212121 !important;
+	border: #212121 !important;
 }
 .btn-theme:hover,
 .btn-theme:active,
@@ -10785,7 +10785,7 @@ ul.social-icons.si-no-border.inverse {
 
 /* Letter Spacings */
 
-.letter-spacing-0 {
+3-0 {
 	letter-spacing: 0px !important;	
 }
 .letter-spacing-1 {
@@ -13412,12 +13412,9 @@ ul.shop-menu > li:last-child{
 }
 .stuff-icons{
 	color: #3a73b9;
-	font-size: 8em;
+	font-size: 5em;
 	text-align: center !important;
 	transition: all 0.5s ease;
-}
-.stuff-icons:hover{
-	color: #3a73b9;
 }
 .stuff-icons:active,	
 .stuff-icons.active{
@@ -13430,11 +13427,16 @@ ul.shop-menu > li:last-child{
 	color: #212121;
 }
 .section-icons{
-	background: #EEE;
+	background: #FAFAFA;
 	margin-top: 2em;
+}
+.grey-sections{
+	background: #EEE;
+	padding-top: 2em;
 }
 .middle-icon{
 	background: #FAFAFA;
+	padding-top: 2em;
 }
 .col-xs-15,
 .col-sm-15,
@@ -13474,6 +13476,9 @@ ul.shop-menu > li:last-child{
 .icon-services:active{
 	background: #bfe1ec;
 }
+.grey-background{
+	background: #FAFAFA;
+}
 .icon-services-middle{
 	text-align: center;
 	transition: all 0.5s ease;
@@ -13497,15 +13502,19 @@ ul.shop-menu > li:last-child{
 	padding: 20px;
 	text-align: center;
 	color: #212121;
+	background: #FAFAFA;
+	margin: 0;
 }
 .service-information{
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
 
 }
 .three-icons{
 	color: #34454d;
-	font-size: 8em;
+	font-size: 5em;
 	text-align: center !important;
 	transition: all 0.5s ease;
 }
@@ -13513,4 +13522,26 @@ ul.shop-menu > li:last-child{
 .three-icons:active,
 .three-icons.active{
 	color: #3a73b9;
+}
+.grey-text{
+	color: #212121;
+}
+.three-information{
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 10px;
+}
+.change-color{
+	
+	background: #bfe1ec;
+}
+.change-icon-color{
+	color: #00acd2;
+}
+.change-three-color{
+	color: #3a73b9 !important;
+}
+.coma-icon{
+	color: #00acd2;
+	margin-top: 10px; 
 }
