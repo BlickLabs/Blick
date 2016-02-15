@@ -2870,7 +2870,7 @@ Header Alignment
 	width:100%;
 	height: 100%;
 	content:'';
-	background: rgba(200,200,200,0.65) !important;
+	background: rgba(255,255,255,0.65) !important;
 	z-index:1;
 }
 .theme-background-section.fs-overlay.light:before {
