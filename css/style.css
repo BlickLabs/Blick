@@ -9581,7 +9581,7 @@ p.error.white{
 
 .footer .footer-copyright {
 	background: #3a73b9;
-	border-top: 1px solid #222;
+	border-top: 0px solid #222;
 	padding: 20px 0;
 }
 .footer .footer-copyright.copyright-big {
