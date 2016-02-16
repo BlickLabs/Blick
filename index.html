@@ -62,7 +62,33 @@
         <!--[if lt IE 9]>
                 <script src="third-party/respond/js/respond.min.js"></script>
         <![endif]-->
+        <!-- Loading Third Party Scripts -->
 
+            <script src="third-party/jquery/jquery.min.js"></script>
+            <script src="third-party/easing/js/jquery.easings.min.js"></script>
+            <script src="third-party/bootstrap/js/bootstrap.min.js"></script>   
+            <script src="third-party/nivo-lightbox/js/nivo-lightbox.min.js"></script>
+            <script src="third-party/owl/js/owl.carousel.js"></script>
+            <script src="third-party/isotope/js/isotope.pkgd.min.js"></script> 
+            <script src="third-party/counter-up/js/jquery.counterup.min.js"></script>
+            <script src="third-party/form-validation/js/formValidation.js"></script>
+            <script src="third-party/form-validation/js/framework/bootstrap.min.js"></script>
+            <script src="third-party/waypoint/js/waypoints.min.js"></script>
+            <script src="plugins/back-to-top.js"></script>
+            <script src="plugins/smoothScroll.js"></script>
+            <script src="js/app.js"></script>
+            <script src="plugins/backstretch/backstretch-ini.js"></script>
+            <script src="plugins/wow-animations/js/wow.min.js"></script>
+            <script src="plugins/skrollr/skrollr-ini.js"></script>
+            <script src="plugins/sliding-panel/jquery.sliding-panel.js"></script>
+            <script src="plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+            <script src="third-party/smooth-scroll/js/smoothScroll.js"></script>
+            <script src="third-party/jquery-parallax/js/jquery.parallax.js"></script>
+            <script src="third-party/jquery-parallax/js/jquery.localscroll.min.js"></script>
+            <script src="third-party/jquery-parallax/js/jquery.scrollTo.js"></script>
+            <script src="js/scripts.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="js/parallax.js"></script>
     </head>
     <body class="header-right-side">
 
@@ -491,72 +517,29 @@
 
 
             </div><!-- End of Page Content -->
-
-            <!-- Loading Third Party Scripts -->
-
-            <script src="third-party/jquery/jquery.min.js"></script>
-            <script src="third-party/easing/js/jquery.easings.min.js"></script>
-            <script src="third-party/bootstrap/js/bootstrap.min.js"></script>	
-            <script src="third-party/nivo-lightbox/js/nivo-lightbox.min.js"></script>
-            <script src="third-party/owl/js/owl.carousel.js"></script>
-            <script src="third-party/isotope/js/isotope.pkgd.min.js"></script> 
-            <script src="third-party/counter-up/js/jquery.counterup.min.js"></script>
-            <script src="third-party/form-validation/js/formValidation.js"></script>
-            <script src="third-party/form-validation/js/framework/bootstrap.min.js"></script>
-            <script src="third-party/waypoint/js/waypoints.min.js"></script>
-            <script src="plugins/back-to-top.js"></script>
-            <script src="plugins/smoothScroll.js"></script>
-            <script src="js/app.js"></script>
-            <script src="plugins/backstretch/backstretch-ini.js"></script>
-            <script src="plugins/wow-animations/js/wow.min.js"></script>
-            <script src="plugins/skrollr/skrollr-ini.js"></script>
-            <script src="plugins/sliding-panel/jquery.sliding-panel.js"></script>
-            <script src="plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-            <script src="third-party/smooth-scroll/js/smoothScroll.js"></script>
-            <script src="third-party/jquery-parallax/js/jquery.parallax.js"></script>
-            <script src="third-party/jquery-parallax/js/jquery.localscroll.min.js"></script>
-            <script src="third-party/jquery-parallax/js/jquery.scrollTo.js"></script>
-            <script type="text/javascript">
-                $(document).ready(function($) {
-                	$(".icon-services, .icon-services-middle").click(function () {
-                	   $(this).toggleClass("change-color");
-                	   
-                	});
-                	$(".stuff-icons").click(function () {
-                	   $(this).toggleClass("change-icon-color");
-                	   
-                	});
-                	$(".grey-sections, .middle-icon").click(function () {
-                	   $(this).toggleClass("change-three-color");
-                	   console.log("Si cambia");
-                	});
-                });
-            </script>
-            <script type="text/javascript">
-                $(document).ready(function() {
-
-                    $('body').scrollspy({target: ".navbar-nav", offset: 80});
-
-
-                    $("#myNavbar a").on('click', function (event) {
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-                            window.location.hash = hash;
-                        });
-                    });	
-                });​
-            </script>
-
-            <!-- Loading Theme's Scripts -->
-
-            <script src="js/scripts.js"></script>
-            <script src="js/custom.js"></script>
-            <script src="js/parallax.js"></script>
-
-
         </div>
+        <script>
+            $(document).ready(function() {
+                $(".icon-services .icon-services-middle").click(function () {
+                       $(this).toggleClass("change-color");
+                });
+                $(".stuff-icons").click(function () {
+                   $(this).toggleClass("change-icon-color");
+                });
+                $(".grey-sections .middle-icon").click(function () {
+                   $(this).toggleClass("change-three-color");
+                });
+                $('body').scrollspy({target: ".navbar-nav", offset: 80});
+                $("#myNavbar a").on('click', function (event) {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                });
+            });
+            </script><!-- Loading Theme's Scripts -->
     </body>
 </html>
