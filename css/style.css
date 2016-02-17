@@ -13499,7 +13499,8 @@ ul.shop-menu > li:last-child{
 	text-align: center;
 }
 .services-tittle{
-	padding: 20px;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 	text-align: center;
 	color: #212121;
 	background: #FAFAFA;
