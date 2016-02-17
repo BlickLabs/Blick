@@ -13434,7 +13434,15 @@ ul.shop-menu > li:last-child{
 	background: #EEE;
 	padding-top: 2em;
 }
+.grey-sections-info{
+	background: #EEE;
+	padding-top: 2em;
+}
 .middle-icon{
+	background: #FAFAFA;
+	padding-top: 2em;
+}
+.middle-icon-info{
 	background: #FAFAFA;
 	padding-top: 2em;
 }
@@ -13547,6 +13555,6 @@ ul.shop-menu > li:last-child{
 	margin-top: 10px; 
 }
 .white-logo{
-	width: 100px;
-	height: 50px;
+	width: 200px;
+	height: 100px;
 }
