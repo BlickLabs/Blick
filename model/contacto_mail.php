@@ -53,7 +53,7 @@ $result = curl_exec($curl);
 curl_close($curl);
 
 
-
+   require_once '../model/contacto_cliente.php';
 //return $result;
 $success = true;
 echo json_encode(array("success" => $success));
