@@ -9911,8 +9911,8 @@ button {
 .tp-caption .btn-theme,
 .tp-caption .btn-theme:focus {
 	color: #fff !important;
-	background-color: #212121 !important;
-	border: #212121 !important;
+	background-color: #34454d !important;
+	border: #34454d !important;
 }
 .btn-theme:hover,
 .btn-theme:active,
@@ -13522,7 +13522,6 @@ ul.shop-menu > li:last-child{
 
 }
 .three-icons{
-	color: #34454d;
 	font-size: 5em;
 	text-align: center !important;
 	transition: all 0.5s ease;
@@ -13557,4 +13556,40 @@ ul.shop-menu > li:last-child{
 .white-logo{
 	width: 200px;
 	height: 100px;
+}
+.top-padding{
+	padding-top: 100px;
+}
+.top-padding2{
+	padding-top: 50px;
+}
+.blick-color{
+	color: #34454d;
+}
+.info{
+	text-align: center;
+}
+.see-more{
+	border-radius: 5px;
+	background: #34454d;
+	color: #FAFAFA;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+	font-size: 1.5em;
+	transition: all 0.5s ease;
+}
+.see-more:hover{
+	background: #333;
+	cursor: pointer;
+}
+.see-services{	
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.grey-sections:hover, .middle-icon:hover{
+	cursor: pointer;
+}
+.no-decoration{
+	text-decoration: none;
 }
