@@ -178,15 +178,15 @@
             <!-- Need to fix active and animations effects, can't keep color and close div -->
             <div class="grey-background padding-top">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-3 grey-sections container-fluid" data-toggle="collapse" data-target="#icon1-1"> 
+                    <div class="col-md-2 col-md-offset-3 grey-sections container-fluid clickable" data-toggle="collapse" data-target="#icon1-1" aria-expanded="false"> 
                             <i class="center-block icon-iconos-15 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> DIAGNÓSTICO Y EVALUACIÓN</h4>
                     </div>
-                    <div class="col-md-2 middle-icon container-fluid" data-toggle="collapse" data-target="#icon1-2">
+                    <div class="col-md-2 middle-icon container-fluid clickable" data-toggle="collapse" data-target="#icon1-2">
                             <i class="center-block icon-iconos-16 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> DISEÑO E<br> IDEACIÓN</h4>
                     </div>
-                    <div class="col-md-2 grey-sections container-fluid" data-toggle="collapse" data-target="#icon1-3">
+                    <div class="col-md-2 grey-sections container-fluid clickable" data-toggle="collapse" data-target="#icon1-3">
                             <i class="center-block icon-iconos-17 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> PROGRAMACIÓN WEB</h4>
                     </div>
@@ -361,9 +361,7 @@
             <script src="js/parallax.js"></script>
         <script>
             $(document).ready(function() {
-                $(".grey-sections .middle-icon").click(function () {
-                   $(this).toggleClass("change-three-color");
-                });
+
                 $('body').scrollspy({target: ".navbar-nav", offset: 80});
                 $("#myNavbar a").on('click', function (event) {
                     event.preventDefault();
@@ -374,19 +372,34 @@
                         window.location.hash = hash;
                     });
                 });
-                                $('.grey-sections, .middle-icon').click(function(event) {
-                                   console.log('Si entra');
-                                   if($('.grey-sections-info, .middle-icon-info').hasClass('collapse in'))
-                                       {
-                                           console.log('si lo hace');
-                                           $('.grey-sections-info, .middle-icon-info').removeClass('in');
-                                           $('.grey-sections, .middle-icon').not($(this)).removeClass('change-three-color');
-                                       }
-                                   else
-                                       {
-                                         $('.collapse').removeClass('in');
-                                     }
+                // $('.grey-sections, .middle-icon').click(function(event) {
+                //    if($('.grey-sections-info, .middle-icon-info').hasClass('collapse in'))
+                //        {
+                //            console.log('si lo hace');
+                //            $('.grey-sections-info, .middle-icon-info').removeClass('in');
+                //            $('.grey-sections, .middle-icon').not($(this)).removeClass('change-three-color');
+                //        }
+                //    else
+                //        {
+                //          $('.collapse').removeClass('in');
+                //      }
+                // });
+                $(".clickable").click(function (event) {
+                  var target = $(this).attr("data-target");
+                    if($(target).hasClass("in")){
+                        $(target).removeClass("in");
+
+                    } else {
+                        $("[id^=icon1-]").each(function(element) {       
+                        if(("#"+$(this).attr("id")) === target) {                           
+                            $(this).addClass("in");
+                        } else {
+                            $(this).removeClass("in");
+                        }
+                    });     
+                    }
                 });
+
             });
             </script><!-- Loading Theme's Scripts -->
     </body>
