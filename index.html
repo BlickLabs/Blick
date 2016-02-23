@@ -374,13 +374,18 @@
                         window.location.hash = hash;
                     });
                 });
-                $('.grey-sections .middle-icon').click(function(event) {
-                	if($('.grey-sections-info .middle-icon-info').hasClass('collapse in')){
-            			$('.grey-sections-info .middle-icon-info').removeClass('in');
-            			$('.grey-sections .middle-icon').not($(this)).removeClass('change-three-color');
-                    } else {
-            			$('.collapse').removeClass('in');
-            		}
+                                $('.grey-sections, .middle-icon').click(function(event) {
+                                   console.log('Si entra');
+                                   if($('.grey-sections-info, .middle-icon-info').hasClass('collapse in'))
+                                       {
+                                           console.log('si lo hace');
+                                           $('.grey-sections-info, .middle-icon-info').removeClass('in');
+                                           $('.grey-sections, .middle-icon').not($(this)).removeClass('change-three-color');
+                                       }
+                                   else
+                                       {
+                                         $('.collapse').removeClass('in');
+                                     }
                 });
             });
             </script><!-- Loading Theme's Scripts -->
