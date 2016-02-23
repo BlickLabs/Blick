@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 	color:#000;	
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 }
 
 i {
@@ -2870,11 +2870,11 @@ Header Alignment
 	width:100%;
 	height: 100%;
 	content:'';
-	background: rgba(255,255,255,0.65) !important;
+	background: rgba(100,100,100,0.65) !important;
 	z-index:1;
 }
 .theme-background-section.fs-overlay.light:before {
-	background: rgba(255,255,255,0.75);
+	background: rgba(33,33,33,0.45);
 }
 .theme-background-section .content-container {
 	display: table; 
@@ -9585,7 +9585,7 @@ p.error.white{
 	padding: 20px 0;
 }
 .footer .footer-copyright.copyright-big {
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .footer.footer-only-copyright {
 	padding-top:0;
@@ -13505,12 +13505,12 @@ ul.shop-menu > li:last-child{
 }
 .service-details{
 	text-align: center;
+	display: inline-block;
 }
 .services-tittle{
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	text-align: center;
-	color: #212121;
 	background: #FAFAFA;
 	margin: 0;
 }
@@ -13525,11 +13525,12 @@ ul.shop-menu > li:last-child{
 	font-size: 5em;
 	text-align: center !important;
 	transition: all 0.5s ease;
+	color: #3a73b9;
 }
 .three-icons:hover,
 .three-icons:active,
 .three-icons.active{
-	color: #3a73b9;
+	color: #34454d;
 }
 .grey-text{
 	color: #212121;
@@ -13551,11 +13552,23 @@ ul.shop-menu > li:last-child{
 }
 .coma-icon{
 	color: #00acd2;
-	margin-top: 10px; 
+	padding-bottom: -10px;
+	display: inline-block;
+	size: 0.5em !important;
+}
+.coma{
+	display: inline-block;
+	width: 20px;
+	height: auto;
+	margin-left: -3px;
+	margin-bottom: -7px;
+}
+.margin-60{
+	margin-bottom: 60px;
 }
 .white-logo{
-	width: 200px;
-	height: 100px;
+	width: 150px;
+	height: auto;
 }
 .top-padding{
 	padding-top: 100px;
@@ -13571,16 +13584,16 @@ ul.shop-menu > li:last-child{
 }
 .see-more{
 	border-radius: 5px;
-	background: #34454d;
+	background: #3a73b9;
 	color: #FAFAFA;
 	padding: 5px;
-	width: 100px;
+	width: 120px;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	transition: all 0.5s ease;
 }
 .see-more:hover{
-	background: #333;
+	background: #3a73b9;
 	cursor: pointer;
 }
 .see-services{	
@@ -13592,4 +13605,17 @@ ul.shop-menu > li:last-child{
 }
 .no-decoration{
 	text-decoration: none;
+}
+.padding-top{
+	padding-top: 5em;
+}
+.filler-parallax{
+	padding-bottom: 3em;
+	padding-top: 3em;
+}
+.grey-text{
+	color: #FAFAFA;
+}
+.padding-bot{
+	padding-bottom: 10em;
 }
