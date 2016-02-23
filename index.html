@@ -178,28 +178,32 @@
             <!-- Need to fix active and animations effects, can't keep color and close div -->
             <div class="grey-background padding-top">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-3 grey-sections container-fluid clickable" data-toggle="collapse" data-target="#icon1-1" aria-expanded="false"> 
+                    <div class="col-md-2 col-md-offset-3 grey-sections container-fluid clickable" data-target="#icon1-1" aria-expanded="false"> 
                             <i class="center-block icon-iconos-15 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> DIAGNÓSTICO Y EVALUACIÓN</h4>
                     </div>
-                    <div class="col-md-2 middle-icon container-fluid clickable" data-toggle="collapse" data-target="#icon1-2">
+                    <div class="col-md-2 middle-icon container-fluid clickable" data-target="#icon1-2" aria-expanded="false">
                             <i class="center-block icon-iconos-16 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> DISEÑO E<br> IDEACIÓN</h4>
                     </div>
-                    <div class="col-md-2 grey-sections container-fluid clickable" data-toggle="collapse" data-target="#icon1-3">
+                    <div class="col-md-2 grey-sections container-fluid clickable" data-target="#icon1-3" aria-expanded="false">
                             <i class="center-block icon-iconos-17 three-icons"></i>
                             <h4 class="Gotham blick-color info" style="padding-bottom: 20px;"> PROGRAMACIÓN WEB</h4>
                     </div>
 
                 </div>
-                <div class="row">
-                	<div class="col-md-2 col-md-offset-3 grey-sections-info container-fluid collapse" id="icon1-1">
+                <div class="row collapse" id="icon1-1">
+                	<div class="col-md-2 col-md-offset-3 grey-sections-info">
                 		<h5 class="three-information Gotham" style="color: #34454d; padding: 20px;">  Análisis del diseño, arquitectura de la información y UX (experiencia de usuario) del sitio actual.</h5>
                 	</div>
-                	<div class="col-md-2 col-md-offset-5 middle-icon-info container-fluid collapse" id="icon1-2">
+                </div>
+                <div class="row collapse" id="icon1-2">
+                	<div class="col-md-2 col-md-offset-5 middle-icon-info">
                 		<h5 class="three-information Gotham" style="color: #34454d; padding: 20px;"> Aterrizamos y organizamos las ideas de los clientes para que sea lo más fácil y sencillo de entender y utilizar.</h5>
                 	</div>
-                	<div class="col-md-2 col-md-offset-7 grey-sections-info container-fluid collapse" id="icon1-3">
+                </div>
+                <div class="row collapse" id="icon1-3">
+                	<div class="col-md-2 col-md-offset-7 grey-sections-info">
                 		<h5 class="three-information Gotham" style="color: #34454d; padding: 20px;"> Construcción del diseño del sitio que plasma las ideas de los clientes.</h5>
                 	</div>
                 </div>
@@ -334,10 +338,8 @@
 
 
             </div><!-- End of Page Content -->
-            <script src="third-party/jquery/jquery.min.js"></script>
-            <script src="third-party/easing/js/jquery.easings.min.js"></script>
-            <script src="third-party/bootstrap/js/bootstrap.min.js"></script>   
-            <script src="third-party/nivo-lightbox/js/nivo-lightbox.min.js"></script>
+            <script src="third-party/jquery/jquery.min.js"></script>            
+            <script src="third-party/bootstrap/js/bootstrap.min.js"></script>               
             <script src="third-party/owl/js/owl.carousel.js"></script>
             <script src="third-party/isotope/js/isotope.pkgd.min.js"></script> 
             <script src="third-party/counter-up/js/jquery.counterup.min.js"></script>
@@ -362,8 +364,8 @@
         <script>
             $(document).ready(function() {
 
-                $('body').scrollspy({target: ".navbar-nav", offset: 80});
-                $("#myNavbar a").on('click', function (event) {
+                //$('body').scrollspy({target: ".navbar-nav", offset: 80});
+                /*$("#myNavbar a").on('click', function (event) {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
@@ -371,7 +373,7 @@
                     }, 800, function () {
                         window.location.hash = hash;
                     });
-                });
+                });*/
                 // $('.grey-sections, .middle-icon').click(function(event) {
                 //    if($('.grey-sections-info, .middle-icon-info').hasClass('collapse in'))
                 //        {
@@ -384,22 +386,23 @@
                 //          $('.collapse').removeClass('in');
                 //      }
                 // });
-                $(".clickable").click(function (event) {
-                  var target = $(this).attr("data-target");
-                    if($(target).hasClass("in")){
-                        $(target).removeClass("in");
-
-                    } else {
-                        $("[id^=icon1-]").each(function(element) {       
-                        if(("#"+$(this).attr("id")) === target) {                           
+            });
+            $(".clickable").click(function (event) {
+                event.preventDefault();
+                var target = $(this).attr("data-target");                    
+                if($(target).hasClass("in")){
+                    $(target).removeClass("in");
+                    return;
+                } else {
+                    $("[id^=icon1]").each(function(element) {
+                        console.log("--------", $(this).attr("id"));                            
+                        if(("#"+$(this).attr("id")) === target) {                                                           
                             $(this).addClass("in");
                         } else {
                             $(this).removeClass("in");
                         }
-                    });     
-                    }
-                });
-
+                    });
+                }
             });
             </script><!-- Loading Theme's Scripts -->
     </body>
